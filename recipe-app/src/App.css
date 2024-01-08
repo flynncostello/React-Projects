@@ -1,0 +1,115 @@
+/* App.css */
+
+/* Overall styling for the entire app */
+.App {
+  text-align: center;
+}
+
+/* Styling for the header section */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Styling for the list of recipes */
+.Recipes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each individual recipe item */
+.Recipe {
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the information section within each recipe item */
+.Recipe .info {
+  flex-grow: 1; /* Takes up the remaining space */
+}
+
+/* Styling for the title of each recipe */
+.Recipe h2 {
+  margin-bottom: 10px;
+}
+
+/* Styling for the box containing the recipe text */
+.Recipe .recipe-text {
+  padding: 10px;
+  background-color: #f8f9fa; /* Lighter background color for recipe text */
+  border-radius: 8px;
+}
+
+/* Styling for the remove button within each recipe item */
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  opacity: 0.8;
+  box-shadow: 1px 1px 1px black;
+}
+
+/* Styling for the form to add new recipes */
+.AddRecipeForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Styling for labels and input fields within the form */
+.AddRecipeForm label {
+  margin: 5px;
+}
+
+.AddRecipeForm input {
+  padding: 8px;
+  margin: 5px;
+}
+
+.recipe-search-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Adjust as needed */
+}
+
+.recipe-search-list li {
+  max-width: 20%;
+  min-width: 100px;
+  margin-bottom: 20px; /* Add margin between each result */
+}
+
+.recipe-search-list li:last-child {
+  margin-right: 0;
+}
+
+
+
+/* Responsive adjustments for larger screens */
+@media screen and (min-width: 768px) {
+  .AddRecipeForm {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .Recipe {
+    max-width: 600px;
+    margin: auto;
+  }
+}
